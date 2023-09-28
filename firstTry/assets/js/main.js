@@ -9,7 +9,9 @@
 // - 7. festlegen wie sich das char verschieben soll encode true and false
 // - 8. alles zum string wieder zusammen setzen
 // - 9. fn zum eigentlichen verschieben des char auf dem index.
-// - 10. funktion caesarCipher aufrufen und in restul speichern, result in HTML schreiben.
+// - 10.funktion zu verschlüsseln in einer variable cipherText zum wiederverwenden gespeichert.
+// - 11.funktion caesarCipher aufrufen und in restul speichern
+// - 12.result in HTML schreiben.
 
 // // 5. variable mit dem alphabet zum verschlüsseln
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -68,10 +70,10 @@ function startCaesarCipher(encode) {
     return cipherText;
   }
 
-  // // 10 . funktion ceasarCipher aufrufen und in result speichern
+  // // 11 . funktion ceasarCipher aufrufen und in result speichern
   const result = caesarCipher(inputText, key, encode);
   console.log(result);
 
-  // // result in HTML ausgeben
+  // // 12. result in HTML ausgeben
   document.getElementById("output").textContent = result.toUpperCase();
 }
