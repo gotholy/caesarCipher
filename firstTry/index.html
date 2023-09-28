@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Man fragt sich immer woran hats gelegen?</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        name="inputText"
+        id="inputText"
+        placeholder="Dein Text"
+        required
+      />
+      <input type="number" name="key" id="key" placeholder="Schlüssel" />
+      <input type="button" value="Codieren" onclick="startCaesarCipher(true)" />
+      <input
+        type="button"
+        value="Decodieren"
+        onclick="startCaesarCipher(false)"
+      />
+    </form>
+    <div id="output"></div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

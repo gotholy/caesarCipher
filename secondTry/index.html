@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ja woran hats gelegen? :D</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Caesar-Verschlüsselung</h1>
+    <form id="caesarForm">
+      <label for="text">Text:</label>
+      <input type="text" id="text" name="text" required /><br /><br />
+      <label for="key">Schlüssel (1-25):</label>
+      <input
+        type="number"
+        id="key"
+        name="key"
+        min="1"
+        max="25"
+        required
+      /><br /><br />
+      <input type="radio" id="encode" name="operation" value="code" checked />
+      <label for="encode">Kodieren</label>
+      <input type="radio" id="decode" name="operation" value="decode" />
+      <label for="decode">Dekodieren</label><br /><br />
+      <input type="submit" value="Verschlüsseln/Entschlüsseln" />
+    </form>
+    <div id="result"></div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
