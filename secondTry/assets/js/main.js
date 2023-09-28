@@ -27,8 +27,7 @@ function caesarCipher(text, key, encode) {
   return result;
 }
 
-document.getElementById("caesarForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+function processForm() {
   const text = document.getElementById("text").value;
   const key = parseInt(document.getElementById("key").value);
   const operation = document.querySelector(
@@ -36,4 +35,5 @@ document.getElementById("caesarForm").addEventListener("submit", function (e) {
   ).value;
   const result = caesarCipher(text, key, operation);
   document.getElementById("result").textContent = `Ergebnis: ${result}`;
-});
+  return false;
+}

@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Caesar-Verschlüsselung</h1>
-    <form id="caesarForm">
+    <form id="caesarForm" onsubmit="return processForm()">
       <label for="text">Text:</label>
       <input type="text" id="text" name="text" required /><br /><br />
       <label for="key">Schlüssel (1-25):</label>
